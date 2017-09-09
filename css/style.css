@@ -48,6 +48,12 @@ header h1 {
 .category > li:hover > a {
     background-color: #96da47;
 }
+.category > li:hover > .sub {
+    visibility: visible;
+    transform: translateY(0px);
+    opacity: 1;
+    transition: all .5s ease;
+}
 .sub {
     background-color: #282d30;
     padding: 20px;
@@ -56,6 +62,10 @@ header h1 {
     left: 0;
     width: 500px;
     border-top: 1px solid #96da47;
+    visibility: hidden;
+    
+    transform: translateY(20px);
+    opacity: 0;
 }
 .submenu {
     float: left;
@@ -79,4 +89,9 @@ header h1 {
     color: #fff;
     font-size: 15px;
     margin-bottom: 10px;
+}
+.slider .banner {
+    width: 100%;
+}
+.item {
 }
