@@ -93,3 +93,191 @@ header h1 {
 .slider .banner {
     width: 100%;
 }
+
+#dealSection {
+    padding: 40px 0;
+    margin-top: -34px;
+    background-color: #96da47;
+}
+.deal {
+    height: 46px;
+    text-align: center;
+    line-height: 46px;
+    cursor: pointer;
+}
+.deal > div {
+    display: inline-block;
+    vertical-align: middle;
+}
+.deal_title {
+    color: #fff;
+    font-family: impact;
+    font-size: 30px;
+}
+.dash {
+    width: 40px;
+    height: 1px;
+    background:#222;
+    margin: 0 10px;
+}
+.deal_desc {
+    font-size: 24px;
+}
+.deal_btn {
+    width: 140px;
+    background: #fff;
+    color: #222;
+    font-weight: bold;
+    font-size: 12px;
+    margin-left: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.deal_btn::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #222;
+    z-index: -1;
+    transform: translateY(50px);
+}
+.deal_btn:hover ::after{
+    z-index: 999;
+    transform: translateY(0px);
+}
+#productView {
+    width: 1200px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin: 0 auto;
+}
+.product_title {
+    text-align: center;
+    font-family: impact;
+    font-size: 30px;
+}
+.under_line{
+    margin:20px auto 30px;
+    width: 30px;
+    height: 1px;
+    background: #ccc;
+}
+.view_item {
+    width: 25%;
+    float: left;
+}
+.view_inner {
+    margin: 0 15px;
+    
+}
+.view_inner .dp , .view_inner .motion {
+    width: 100%;
+}
+.thumnails {
+    position: relative;
+    perspective: 500px;
+}
+.thumnails img {
+    display: block;
+}
+.thumnails .motion {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotatey(90deg) scale(0.8);
+    opacity: 1;
+    transition: all .5s ease;
+}
+.image {
+    position: relative;
+    overflow: hidden;
+    
+}
+.block {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 3px 2px;
+    box-sizing: border-box;
+    transform: translateY(46px);
+    transition: all .5s ease;
+    opacity: 1;
+}
+.block_list {}
+.block_list li {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    float: left;
+    margin: 0 1px;
+    text-align: center;
+    line-height: 40px;
+}
+.block_list li.cart {
+    width: calc(100% - 86px);   
+}
+
+.view_inner:hover .block {
+    transform: translateY(0px);
+    opacity: 1;
+}
+.thumnails:hover .motion {
+    transform: rotatey(0deg) scale(1);
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
